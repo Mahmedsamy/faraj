@@ -1,6 +1,7 @@
-import 'package:faraj/screens/donatespots/donatespots_screen.dart';
-import 'package:faraj/screens/login/login_screen.dart';
+
 import 'package:flutter/material.dart';
+
+import '../screens.dart';
 
 class DonateElectricity extends StatelessWidget {
   const DonateElectricity({super.key});
@@ -33,20 +34,20 @@ class DonateElectricity extends StatelessWidget {
                 ),
                 child: Container(
                   child:  Padding(
-                    padding: EdgeInsets.all(30.0),
+                    padding: const EdgeInsets.all(30.0),
                     child: Column(
                       children: [
-                        Text(
+                        const Text(
                           'Donate Electricity',
                           style: TextStyle(
                             fontSize: 30,
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
-                        Text(
+                        const Text(
                           'Electricity donate is a noble act, so dont let a person suffer from electricity',
                           style: TextStyle(
                             fontSize: 20,
@@ -54,7 +55,7 @@ class DonateElectricity extends StatelessWidget {
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(height: 70,),
+                        const SizedBox(height: 70,),
                         Row(
                           children: [
                             TextButton(onPressed: () {
@@ -70,7 +71,7 @@ class DonateElectricity extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             ),
-                            SizedBox(width: 140),
+                            const SizedBox(width: 140),
                             TextButton(onPressed: () {
                               Navigator.push(
                                   context,

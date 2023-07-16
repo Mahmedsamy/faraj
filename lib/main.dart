@@ -1,5 +1,6 @@
 import 'package:faraj/config/theme.dart';
 import 'package:faraj/screens/faraj_screen/faraj_screen.dart';
+import 'package:faraj/screens/information/information_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: theme(),
-      home: const FarajScreen(),
+      home: const InformationScreen(),
     );
   }
 }

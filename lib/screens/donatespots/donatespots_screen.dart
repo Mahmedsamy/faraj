@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../screens.dart';
+
 class DonateSpots extends StatelessWidget {
   const DonateSpots({super.key});
 
@@ -31,20 +33,20 @@ class DonateSpots extends StatelessWidget {
                 ),
                 child: Container(
                   child:  Padding(
-                    padding: EdgeInsets.all(30.0),
+                    padding: const EdgeInsets.all(30.0),
                     child: Column(
                       children: [
-                        Text(
+                        const Text(
                           'Donate Spots',
                           style: TextStyle(
                             fontSize: 30,
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 30,
                         ),
-                        Text(
+                        const Text(
                           'These are the areas where people need electricity',
                           style: TextStyle(
                             fontSize: 20,
@@ -52,22 +54,22 @@ class DonateSpots extends StatelessWidget {
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(height: 70,),
+                        const SizedBox(height: 70,),
                         GestureDetector(
                           onTap: (){
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (BuildContext context) => const DonateSpots() ));
+                                    builder: (BuildContext context) => const LoginScreen() ));
                           },
                           child: Container(
-                           padding: EdgeInsets.all(25),
-                            margin: EdgeInsets.symmetric(horizontal: 25),
+                           padding: const EdgeInsets.all(25),
+                            margin: const EdgeInsets.symmetric(horizontal: 25),
                             decoration: BoxDecoration(
                               color: Colors.green,
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text('Get Started',
                                 style: TextStyle(color: Colors.white,
                                   fontSize: 15,

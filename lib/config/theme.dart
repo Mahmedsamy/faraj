@@ -11,44 +11,44 @@ ThemeData theme() {
 TextTheme textTheme() {
   return const TextTheme(
     displayLarge: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 32,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
     ),
     displayMedium: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 24,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
     ),
     displaySmall: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 20,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
     ),
     headlineMedium: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 18,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
     ),
     headlineSmall: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 16,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
     ),
     titleLarge: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 14,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
     ),
     bodyLarge: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 12,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
     ),
     bodyMedium: TextStyle(
-      color: Colors.black,
+      color: Colors.white,
       fontSize: 10,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.normal,
     ),
   );
 }

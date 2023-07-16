@@ -1,5 +1,6 @@
-import 'package:faraj/screens/donateelectricity/donateelectricity_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../screens.dart';
 
 class FarajScreen extends StatelessWidget {
   const FarajScreen({super.key});
