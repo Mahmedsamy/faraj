@@ -64,7 +64,7 @@ class InformationScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20.0,),
+                      const SizedBox(height: 20.0,),
                       Container(
                         alignment: Alignment.center,
                         height: 70,
@@ -83,7 +83,7 @@ class InformationScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20.0,),
+                      const SizedBox(height: 20.0,),
                       Container(
                         alignment: Alignment.center,
                         height: 70,
@@ -102,7 +102,7 @@ class InformationScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 20.0,),
+                      const SizedBox(height: 20.0,),
                       Container(
                         alignment: Alignment.center,
                         height: 70,
@@ -121,7 +121,7 @@ class InformationScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(height: 30),
+                      const SizedBox(height: 30),
                       GestureDetector(
                         onTap: (){
                           Navigator.push(

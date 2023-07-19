@@ -5,9 +5,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
           children: [
             Container(
               height: 200,
@@ -18,25 +18,23 @@ class HomeScreen extends StatelessWidget {
                     bottomRight: Radius.circular(20)),
                 color: Colors.deepPurple,
               ),
-
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(40.0),
-                    child: Container(
-                      child:
-                      Text(
-                        textAlign: TextAlign.center,
-                        'Home',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.normal,
-                          color: Colors.white,
+              child: SingleChildScrollView(
+                child: Container(
+                  child: const Padding(
+                    padding: EdgeInsets.all(70.0),
+                    child: Column(
+                      children: [
+                        Text(
+                          textAlign: TextAlign.center,
+                          'Home',
+                          style: TextStyle(fontSize: 30,
+                              color: Colors.white,
+                          ),
                         ),
-                      ),
+                    ],
                     ),
                   ),
-                ],
+                ),
               ),
             ),
           ],
