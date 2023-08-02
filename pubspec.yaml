@@ -63,6 +63,7 @@ flutter:
   assets:
     - images/123.png
     - lib/screens/sign_up/sign_up_screen.dart
+    - lib/screens/receivinghistory/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

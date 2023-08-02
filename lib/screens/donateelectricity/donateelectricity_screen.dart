@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../screens.dart';
@@ -13,76 +12,105 @@ class DonateElectricity extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              Container(
-                height: 300.0,
-                width: 120.0,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('images/123.png'),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                    vertical: 50.0, horizontal: 50.0),
+                child: Container(
+                  height: 300,
+                  width: 400,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('images/123.png'),
+                    ),
                   ),
                 ),
               ),
-              Container(
-                height: 340,
-                width: 340,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(70),
-                    topRight: Radius.circular(70),
-                  ),
-                  color: Colors.white,
-                ),
+              const SizedBox(
+                height: 30.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Container(
-                  child:  Padding(
-                    padding: const EdgeInsets.all(30.0),
+                  height: 590,
+                  width: double.infinity,
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(70),
+                      topRight: Radius.circular(70),
+                    ),
+                    color: Colors.white,
+                  ),
+                  child: Container(
                     child: Column(
                       children: [
-                        const Text(
-                          'Donate Electricity',
-                          style: TextStyle(
-                            fontSize: 30,
+                        const Padding(
+                          padding: EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            'Donate Electricity',
+                            style: TextStyle(fontSize: 50, color: Colors.black),
                           ),
-                          textAlign: TextAlign.center,
                         ),
                         const SizedBox(
-                          height: 30,
+                          height: 70,
                         ),
                         const Text(
                           'Electricity donate is a noble act, so dont let a person suffer from electricity',
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 30,
                             fontWeight: FontWeight.normal,
+                            color: Colors.black,
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        const SizedBox(height: 70,),
+                        const SizedBox(
+                          height: 200,
+                        ),
                         Row(
                           children: [
-                            TextButton(onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (BuildContext context) => const LoginScreen() ));
-                            },
+                            TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            const DonateSpots()));
+                              },
                               child: const Text(
-                              'Skip',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            ),
-                            const SizedBox(width: 140),
-                            TextButton(onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (BuildContext context) => const DonateSpots() ));
-                            },
-                              child: const Text(
-                                'Next',
+                                'Skip',
                                 style: TextStyle(
                                     color: Colors.black,
-                                    fontWeight: FontWeight.bold),
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0),
+                              ),
+                            ),
+                            Spacer(),
+                            TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            const DonateSpots()));
+                              },
+                              child:  Padding(
+                                padding: const EdgeInsets.only(right: 20.0),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'Next',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20.0,
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.arrow_forward,
+                                      color: Colors.black,
+                                      size: 30.0,
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ],

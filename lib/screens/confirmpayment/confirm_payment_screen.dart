@@ -28,7 +28,8 @@ class ConfirmPayment extends StatelessWidget {
                           Text(
                             textAlign: TextAlign.center,
                             'Send Donation',
-                            style: TextStyle(fontSize: 20,
+                            style: TextStyle(
+                              fontSize: 20,
                               color: Colors.white,
                             ),
                           ),
@@ -42,7 +43,8 @@ class ConfirmPayment extends StatelessWidget {
                 padding: const EdgeInsets.all(20.0),
                 child: Container(
                   alignment: Alignment.bottomLeft,
-                  child: const Text('Choose Card',
+                  child: const Text(
+                    'Choose Card',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
@@ -52,98 +54,97 @@ class ConfirmPayment extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20.0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 20.0, vertical: 20.0),
                 child: Container(
                   height: 60.0,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: Colors.green,
-                  borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(12),
                   ),
-
                 ),
               ),
               Container(
                 alignment: Alignment.bottomLeft,
-                child:
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 30.0,horizontal: 30.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'TRANSFER',
+                child: const Padding(
+                  padding:
+                      EdgeInsets.symmetric(vertical: 30.0, horizontal: 30.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'TRANSFER',
                         style: TextStyle(
-                          color: Colors.grey,
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold
-                        ),
-                        ),
-                        SizedBox(
-                          height: 10.0,
-                        ),
-                        Text(
-                          'EGP300.00',
+                            color: Colors.grey,
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'EGP300.00',
                         style: TextStyle(
                           fontSize: 30.0,
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                         ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
+                ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 20.0,left: 20.0),
+                padding: const EdgeInsets.only(right: 20.0, left: 20.0),
                 child: Container(
                   height: 2.0,
                   color: Colors.grey,
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.only(left: 20.0,top: 20.0),
+               const Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 20.0),
                 child: Row(
                   children: [
                     Text(
                       'To Account',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                      color:Colors.grey,
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ],
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 20.0,top: 20.0),
+                padding: const EdgeInsets.only(left: 20.0, top: 20.0),
                 child: Container(
                   alignment: Alignment.bottomLeft,
-                  child:  const Column(
-                        children: [
-                          Text(
-                            'Electricity',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20.0,
-                              color: Colors.black,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 10.0,
-                          ),
-                          Text(
-                            'Charity Organizer',
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 15.0,
-                            fontWeight: FontWeight.normal,
-                          ),
-                          ),
-                        ],
+                  child: const Column(
+                    children: [
+                      Text(
+                        'Electricity',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
                       ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text(
+                        'Charity Organizer',
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Padding(
@@ -154,7 +155,7 @@ class ConfirmPayment extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 30.0,top: 20.0),
+                padding: const EdgeInsets.only(left: 30.0, top: 20.0),
                 child: Container(
                   alignment: Alignment.bottomLeft,
                   child: Column(
@@ -163,12 +164,10 @@ class ConfirmPayment extends StatelessWidget {
                         children: [
                           Text(
                             'Transfer Amount',
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 20.0
+                            style:
+                                TextStyle(color: Colors.grey, fontSize: 20.0),
                           ),
-                          ),
-                          SizedBox(width: 120,),
+                          Spacer(),
                           Text(
                             'EGP300.00',
                             style: TextStyle(
@@ -183,12 +182,10 @@ class ConfirmPayment extends StatelessWidget {
                         children: [
                           Text(
                             ' Taxes',
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 20.0
-                            ),
+                            style:
+                                TextStyle(color: Colors.grey, fontSize: 20.0),
                           ),
-                          SizedBox(width: 210,),
+                          Spacer(),
                           Text(
                             'EGP12.00',
                             style: TextStyle(
@@ -203,12 +200,10 @@ class ConfirmPayment extends StatelessWidget {
                         children: [
                           Text(
                             'Total Amount',
-                            style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 20.0
-                            ),
+                            style:
+                                TextStyle(color: Colors.grey, fontSize: 20.0),
                           ),
-                          SizedBox(width: 150,),
+                          Spacer(),
                           Text(
                             'EGP312.00',
                             style: TextStyle(
@@ -221,11 +216,12 @@ class ConfirmPayment extends StatelessWidget {
                       ),
                       const SizedBox(height: 30),
                       GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (BuildContext context) => const ConfirmPayment() ));
+                                  builder: (BuildContext context) =>
+                                      const ConfirmPayment()));
                         },
                         child: Container(
                           padding: const EdgeInsets.all(15),
@@ -235,8 +231,10 @@ class ConfirmPayment extends StatelessWidget {
                             borderRadius: BorderRadius.circular(30),
                           ),
                           child: const Center(
-                            child: Text('Confirm Payment',
-                              style: TextStyle(color: Colors.white,
+                            child: Text(
+                              'Confirm Payment',
+                              style: TextStyle(
+                                color: Colors.white,
                                 fontSize: 15,
                                 fontWeight: FontWeight.normal,
                               ),
@@ -248,7 +246,6 @@ class ConfirmPayment extends StatelessWidget {
                   ),
                 ),
               ),
-
             ],
           ),
         ),
