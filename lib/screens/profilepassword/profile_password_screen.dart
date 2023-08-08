@@ -1,6 +1,5 @@
+import 'package:faraj/layout/auth/role/role_screen.dart';
 import 'package:flutter/material.dart';
-
-import '../screens.dart';
 
 class ProfilePassword extends StatelessWidget {
   const ProfilePassword({super.key});
@@ -112,7 +111,7 @@ class ProfilePassword extends StatelessWidget {
                     contentPadding: const EdgeInsets.symmetric(vertical: 40,horizontal: 40.0),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 80,
                 ),
                 GestureDetector(

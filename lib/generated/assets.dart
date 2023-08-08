@@ -2,33 +2,46 @@
 class Assets {
   Assets._();
 
-  static const String configAppRouter = 'lib/config/app_router.dart';
-  static const String configTheme = 'lib/config/theme.dart';
+  static const String componentsHomeApp = 'lib/shared/components/home_app.dart';
+  static const String componentsHomeFilterList = 'lib/shared/components/home_filter_list.dart';
+  static const String componentsSettingAppBar = 'lib/shared/components/setting_app_bar.dart';
   static const String confirmpaymentConfirmPaymentScreen = 'lib/screens/confirmpayment/confirm_payment_screen.dart';
-  static const String donateelectricityDonateelectricityScreen = 'lib/screens/donateelectricity/donateelectricity_screen.dart';
-  static const String donatespotsDonatespotsScreen = 'lib/screens/donatespots/donatespots_screen.dart';
+  static const String cubitAppCubit = 'lib/shared/cubit/app_cubit.dart';
+  static const String cubitStates = 'lib/shared/cubit/states.dart';
   static const String donationhistoryDonationHistory = 'lib/screens/donationhistory/donation_history.dart';
-  static const String farajScreenFarajScreen = 'lib/screens/faraj_screen/faraj_screen.dart';
   static const String finalRequestFinalRequest = 'lib/screens/final_request/final_request.dart';
   static const String generatedAssets = 'lib/generated/assets.dart';
-  static const String homeHomeScreen = 'lib/screens/home/home_screen.dart';
+  static const String homeHomeLayout = 'lib/layout/home/home_layout.dart';
   static const String images123 = 'images/123.png';
   static const String informationInformationScreen = 'lib/screens/information/information_screen.dart';
+  static const String l10nAppAr = 'lib/l10n/app_ar.arb';
+  static const String l10nAppEn = 'lib/l10n/app_en.arb';
   static const String languageLanguageScreen = 'lib/screens/language/language_screen.dart';
   static const String libMain = 'lib/main.dart';
-  static const String loginLoginScreen = 'lib/screens/login/login_screen.dart';
+  static const String localCacheHelper = 'lib/network/local/cache_helper.dart';
+  static const String loginLoginLayout = 'lib/layout/auth/login/login_layout.dart';
+  static const String networkEndPoints = 'lib/network/end_points.dart';
   static const String notificationNotificationScreen = 'lib/screens/notification/notification_screen.dart';
+  static const String onBoardingDonateelectricityScreen = 'lib/layout/onBoarding/donateelectricity_screen.dart';
+  static const String onBoardingDonatespotsScreen = 'lib/layout/onBoarding/donatespots_screen.dart';
+  static const String onBoardingFarajScreen = 'lib/layout/onBoarding/faraj_screen.dart';
   static const String paymentdonationPaymentDonationScreen = 'lib/screens/paymentdonation/payment_donation_screen.dart';
   static const String personalinformationPersonalInformationScreen = 'lib/screens/personalinformation/personal_information_screen.dart';
-  static const String profiledonatorProfileDonator = 'lib/screens/profiledonator/profile_donator.dart';
   static const String profilepasswordProfilePasswordScreen = 'lib/screens/profilepassword/profile_password_screen.dart';
   static const String receivinghistoryReceivingHistory = 'lib/screens/receivinghistory/receiving_history.dart';
+  static const String registerRegisterLayout = 'lib/layout/auth/register/register_layout.dart';
+  static const String remoteDioHelper = 'lib/network/remote/dio_helper.dart';
   static const String requestDonationRequestDonationScreen = 'lib/screens/request_donation/request_donation_screen.dart';
   static const String requestdonationRequestdonationScreen = 'lib/screens/requestdonation/requestdonation_screen.dart';
-  static const String roleRoleScreen = 'lib/screens/role/role_screen.dart';
+  static const String roleRoleScreen = 'lib/layout/auth/role/role_screen.dart';
   static const String screensScreens = 'lib/screens/screens.dart';
-  static const String screensSignUpSignUpScreen = 'lib/screens/sign_up/sign_up_screen.dart';
-  static const String signUpSignUpScreen = 'lib/screens/sign_up/sign_up_screen.dart';
+  static const String settingSettingScreen = 'lib/screens/setting/setting_screen.dart';
+  static const String sharedBlocObserver = 'lib/shared/bloc_observer.dart';
+  static const String sharedComponents = 'lib/shared/components.dart';
+  static const String sharedConstants = 'lib/shared/constants.dart';
+  static const String stylesColors = 'lib/styles/colors.dart';
+  static const String stylesStyles = 'lib/styles/styles.dart';
+  static const String stylesThemes = 'lib/styles/themes.dart';
   static const String widgetsMybutton = 'lib/widgets/mybutton.dart';
 
 }
