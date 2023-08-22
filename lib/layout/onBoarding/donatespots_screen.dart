@@ -1,4 +1,5 @@
 import 'package:faraj/layout/auth/login/login_layout.dart';
+import 'package:faraj/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 class DonateSpots extends StatelessWidget {
@@ -7,7 +8,7 @@ class DonateSpots extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: colorPrimary,
         body: Center(
           child: Column(
             children: [
@@ -69,7 +70,7 @@ class DonateSpots extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (BuildContext context) => const LoginScreen() ));
+                                    builder: (BuildContext context) =>  LoginScreen() ));
                           },
                           child: Container(
                             padding: const EdgeInsets.all(25),

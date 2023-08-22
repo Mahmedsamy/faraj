@@ -1,3 +1,4 @@
+import 'package:faraj/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 class ReceivingHistory extends StatelessWidget {
@@ -15,7 +16,7 @@ class ReceivingHistory extends StatelessWidget {
               borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20)),
-              color: Colors.deepPurple,
+              color: colorPrimary,
             ),
             child: SingleChildScrollView(
               child: Container(

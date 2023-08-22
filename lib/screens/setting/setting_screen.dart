@@ -1,4 +1,5 @@
 import 'package:faraj/layout/auth/login/login_layout.dart';
+import 'package:faraj/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../screens.dart';
@@ -18,7 +19,7 @@ class ProfileDonator extends StatelessWidget {
               borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20)),
-              color: Colors.deepPurple,
+              color: colorPrimary,
             ),
             child: SingleChildScrollView(
               child: Container(
@@ -259,7 +260,7 @@ class ProfileDonator extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext context) => const LoginScreen() ));
+                            builder: (BuildContext context) =>  LoginScreen() ));
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 300.0),

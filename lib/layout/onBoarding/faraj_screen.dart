@@ -1,3 +1,4 @@
+import 'package:faraj/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../screens/screens.dart';
@@ -8,7 +9,7 @@ class FarajScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: colorPrimary,
         body: Center(
         child: InkWell(
         onTap: ()

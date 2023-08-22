@@ -1,3 +1,4 @@
+import 'package:faraj/styles/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../screens/screens.dart';
@@ -8,7 +9,7 @@ class DonateElectricity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: colorPrimary,
         body: Center(
           child: Column(
             children: [
@@ -83,7 +84,7 @@ class DonateElectricity extends StatelessWidget {
                                     fontSize: 20.0),
                               ),
                             ),
-                            Spacer(),
+                            const Spacer(),
                             TextButton(
                               onPressed: () {
                                 Navigator.push(
@@ -92,8 +93,8 @@ class DonateElectricity extends StatelessWidget {
                                         builder: (BuildContext context) =>
                                             const DonateSpots()));
                               },
-                              child:  Padding(
-                                padding: const EdgeInsets.only(right: 20.0),
+                              child:  const Padding(
+                                padding: EdgeInsets.only(right: 20.0),
                                 child: Row(
                                   children: [
                                     Text(

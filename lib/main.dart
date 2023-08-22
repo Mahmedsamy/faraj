@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'screens/screens.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
+       localizationsDelegates: const [
+         AppLocalizations.delegate,
+         GlobalMaterialLocalizations.delegate,
+         GlobalMaterialLocalizations.delegate,
+       ],
+       supportedLocales: const [
+         Locale('en'),
+         Locale('ar'),
+       ],
        home: const FarajScreen(),
     );
   }

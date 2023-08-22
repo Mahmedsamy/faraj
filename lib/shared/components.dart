@@ -2,11 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import '../styles/colors.dart';
+import 'constants.dart';
+
+
 
 
 Widget defaultButton(
     {double width = double.infinity,
-      Color background = defaultColor,
+      Color background = colorPrimary,
       double height = 50,
       required VoidCallback? function,
       required String text, required bool isUpperCase}) =>

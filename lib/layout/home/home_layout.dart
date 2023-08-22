@@ -25,7 +25,8 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          language!.home ,
+                          // language!.home
+                          'Home',
                           style: TextStyle(fontSize: 30,
                               color: Colors.white,
                           ),
